@@ -8,13 +8,10 @@ class Player {
 
   prettyTime(timeInSeconds) {
 
+        const mins = Math.floor(timeInSeconds / 60);
+        const seconds = Math.floor(timeInSeconds % 60);
 
-    const seconds = timeInSeconds % 60;
-    const mins = Math.floor(seconds/60)%60;
-
-
-    return mins+':'+seconds;
-
+        return mins+':'+seconds;
 
   }
 

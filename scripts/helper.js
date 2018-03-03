@@ -5,7 +5,8 @@
         player.playPause(song);
 
 
-        $('.total-time').text( player.currentlyPlaying.duration );
+
+        $('.total-time').text( player.prettyTime(player.currentlyPlaying.duration) );
       };
 
 }
